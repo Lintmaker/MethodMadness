@@ -1,7 +1,8 @@
+// Author: Lin Yao Pan
 public class LPanLib {
     /**
      * Tells of the string contains a palindrome ( a word that is spelled the same forwards and backwards like racecar.)
-     * @param str
+     * @param str, any word that will be run through to see if it truly is a palindrome.
      * @return boolean value
      */
     public static boolean isPalindrome(String str) {
@@ -36,11 +37,11 @@ public class LPanLib {
     }
 
     /**
-     * tells if an integer is in the fibonnaci sequence, by going through every number in the sequence up to test.
+     * confirms if an integer is in the fibonacci sequence, by going through every number in the sequence up to test.
      * @param test, integer run through the program to see it is the sequence.
      * @return boolean value
      */
-    public static boolean isFibonnaci(int test) {
+    public static boolean isFibonacci(int test) {
         int first = 1;
         int second = 1;
         while (first <= test || second <= test) {
@@ -56,7 +57,7 @@ public class LPanLib {
 
     /**
      * Prints values of the base multiplied by every number from zero to range.
-     * @param base, the integer that is multiplied and priinted by every number from zero to range.
+     * @param base, the integer that is multiplied and printed by every number from zero to range.
      * @param range, the integer that tells how many times the base is multiplied including zero
      */
     public static void multiplicationTable(int base, int range) {
@@ -71,8 +72,8 @@ public class LPanLib {
     }
 
     /**
-     * replaces multiples of 3 with foo, 5 with base
-     * @param range
+     * replaces every multiple of 3 with foo, 5 with bar, and multiple with 3 and 5 in them with baz from zero to range.
+     * @param range, the range of numbers from zero to range to be replaced or not depending on the multiple.
      */
     public static void fooBarBaz(int range) {
         int start = 0;
